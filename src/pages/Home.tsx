@@ -3,6 +3,15 @@ import { Link } from "react-router-dom";
 import { IconPhone, IconMail, IconMapPin, IconArrowRight, IconStar } from "@tabler/icons-react";
 import Footer from "../components/Footer";
 
+/* =========================
+   LOCAL ASSETS
+========================= */
+import ancientPyramidImg from "../assets/useme.jpeg";
+import allSeeingEyeImg from "../assets/useme1.jpeg";
+//import mysteriousEyeImg from "../assets/mysterious-eye.jpeg";
+//import eyeDetailImg from "../assets/eye-detail.jpeg";
+
+
 // Pyramid Eye SVG Components
 const ClassicPyramidEye = ({ size = 100, animated = false }) => (
   <svg 
@@ -29,18 +38,24 @@ const ClassicPyramidEye = ({ size = 100, animated = false }) => (
 );
 
 export default function Home() {
-  // Unsplash Pyramid/Eye Related Images
+  /* =========================
+     IMAGE SOURCES
+  ========================= */
   const pyramidEyeImages = {
-    // Actual Pyramid with Eye imagery from Unsplash
-    ancientPyramid: "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+    ancientPyramid: ancientPyramidImg,
+    allSeeingEye: allSeeingEyeImg,
+    //mysteriousEye: mysteriousEyeImg,
+    //eyeDetail: eyeDetailImg,
+
+    //ancientPyramid: "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
     pyramidEyeArt: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
-    mysteriousEye: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=2068&q=80",
+    //mysteriousEye: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=2068&q=80",
     pyramidStructure: "https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
-    eyeDetail: "https://images.unsplash.com/photo-1511497584788-876760111969?ixlib=rb-4.0.3&auto=format&fit=crop&w=2032&q=80",
+    //eyeDetail: "https://images.unsplash.com/photo-1511497584788-876760111969?ixlib=rb-4.0.3&auto=format&fit=crop&w=2032&q=80",
     goldenPyramid: "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
     secretSociety: "https://images.unsplash.com/photo-1534447677768-be436bb09401?ixlib=rb-4.0.3&auto=format&fit=crop&w=2094&q=80",
     ancientSymbols: "https://images.unsplash.com/photo-1542044898-3a503d4f763d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
-    allSeeingEye: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+    //allSeeingEye: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
     pyramidLight: "https://images.unsplash.com/photo-1534088568595-a066f410bcda?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
     mysteriousArt: "https://images.unsplash.com/photo-1542044898-3a503d4f763d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
     eyeCloseup: "https://images.unsplash.com/photo-1511497584788-876760111969?ixlib=rb-4.0.3&auto=format&fit=crop&w=2032&q=80",

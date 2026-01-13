@@ -1,6 +1,8 @@
 import { Title, Text, Paper, Container, Grid, Image, Button, Group, Stack, ThemeIcon, Card, BackgroundImage, Overlay, Box, rem } from "@mantine/core";
 import { Link } from "react-router-dom";
 import { IconPhone, IconMail, IconMapPin, IconCrown, IconShield, IconEye, IconLock } from "@tabler/icons-react";
+import ancientPyramidImg from "../assets/useme.jpeg";
+
 
 export default function About() {
   return (
@@ -96,7 +98,8 @@ export default function About() {
             
             <Grid.Col span={{ base: 12, md: 4 }}>
               <Image
-                src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+              src={ancientPyramidImg}
+                //src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
                 radius="lg"
                 alt="Ancient wisdom and symbols"
               />
